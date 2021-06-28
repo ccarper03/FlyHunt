@@ -9,12 +9,9 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(i);
     }
-    private void Update()
+    public void CloseApplication()
     {
-        // 1. QUIT
-
-        // If player presses ESCAPE, game quits. Does not work in editor.
-        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
+        Application.Quit();
     }
 }
  
